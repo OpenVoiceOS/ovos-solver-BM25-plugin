@@ -17,6 +17,11 @@ dependencies = [
     "quebra-frases>=0.2.0",
 ]
 
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0.0,<9",
+]
+
 [project.urls]
 Homepage = "https://github.com/OpenVoiceOS/ovos-solver-BM25-plugin"
 
@@ -28,7 +33,7 @@ Homepage = "https://github.com/OpenVoiceOS/ovos-solver-BM25-plugin"
 "ovos-summarizer-bm25" = "ovos_bm25_solver:BM25SummarizerPlugin"
 
 [project.entry-points."opm.solver.reading_comprehension"]
-"ovos-evidence-solver-bm25" = "ovos_bm25_solver:BM25SolverPlugin"
+"ovos-evidence-solver-bm25" = "ovos_bm25_solver:BM25EvidenceSolverPlugin"
 
 [project.entry-points."opm.solver.multiple_choice"]
 "ovos-choice-solver-bm25" = "ovos_bm25_solver:BM25MultipleChoiceSolver"
@@ -40,3 +45,6 @@ include-package-data = true
 [tool.setuptools.dynamic]
 readme = { file = "README.md", content-type = "text/markdown" }
 version = { attr = "ovos_bm25_solver.version.__version__" }
+
+[tool.pytest.ini_options]
+testpaths = ["test"]
