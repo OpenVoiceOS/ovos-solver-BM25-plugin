@@ -1,28 +1,36 @@
 # Changelog
 
-## [0.1.1a3](https://github.com/TigreGotico/ovos-solver-BM25-plugin/tree/0.1.1a3) (2026-07-30)
+## [0.1.2a1](https://github.com/OpenVoiceOS/ovos-solver-BM25-plugin/tree/0.1.2a1) (2026-09-25)
 
-[Full Changelog](https://github.com/TigreGotico/ovos-solver-BM25-plugin/compare/0.1.1a2...0.1.1a3)
-
-**Merged pull requests:**
-
-- docs: rewrite README in Simplified Technical English [\#28](https://github.com/TigreGotico/ovos-solver-BM25-plugin/pull/28) ([JarbasAl](https://github.com/JarbasAl))
-
-## [0.1.1a2](https://github.com/TigreGotico/ovos-solver-BM25-plugin/tree/0.1.1a2) (2025-12-18)
-
-[Full Changelog](https://github.com/TigreGotico/ovos-solver-BM25-plugin/compare/0.1.1a1...0.1.1a2)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-BM25-plugin/compare/0.1.1a3...0.1.2a1)
 
 **Merged pull requests:**
 
-- chore: Configure Renovate [\#20](https://github.com/TigreGotico/ovos-solver-BM25-plugin/pull/20) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): move to pyproject and raise the floors that cannot import [\#31](https://github.com/OpenVoiceOS/ovos-solver-BM25-plugin/pull/31) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
 
-## [0.1.1a1](https://github.com/TigreGotico/ovos-solver-BM25-plugin/tree/0.1.1a1) (2025-11-22)
+## [0.1.1a3](https://github.com/OpenVoiceOS/ovos-solver-BM25-plugin/tree/0.1.1a3) (2026-07-30)
 
-[Full Changelog](https://github.com/TigreGotico/ovos-solver-BM25-plugin/compare/0.1.0...0.1.1a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-BM25-plugin/compare/0.1.1a2...0.1.1a3)
 
 **Merged pull requests:**
 
-- fix: summarizer sentence split [\#18](https://github.com/TigreGotico/ovos-solver-BM25-plugin/pull/18) ([JarbasAl](https://github.com/JarbasAl))
+- docs: rewrite README in Simplified Technical English [\#28](https://github.com/OpenVoiceOS/ovos-solver-BM25-plugin/pull/28) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.1.1a2](https://github.com/OpenVoiceOS/ovos-solver-BM25-plugin/tree/0.1.1a2) (2025-12-18)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-BM25-plugin/compare/0.1.1a1...0.1.1a2)
+
+**Merged pull requests:**
+
+- chore: Configure Renovate [\#20](https://github.com/OpenVoiceOS/ovos-solver-BM25-plugin/pull/20) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [0.1.1a1](https://github.com/OpenVoiceOS/ovos-solver-BM25-plugin/tree/0.1.1a1) (2025-11-22)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-BM25-plugin/compare/0.1.0...0.1.1a1)
+
+**Merged pull requests:**
+
+- fix: summarizer sentence split [\#18](https://github.com/OpenVoiceOS/ovos-solver-BM25-plugin/pull/18) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
