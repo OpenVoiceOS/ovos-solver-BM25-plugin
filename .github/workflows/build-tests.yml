@@ -9,4 +9,6 @@ jobs:
   build:
     uses: OpenVoiceOS/gh-automations/.github/workflows/build-tests.yml@dev
     with:
-      python_versions: '["3.10", "3.11", "3.12", "3.13", "3.14"]'
+      # pyproject declares requires-python >=3.9, so 3.9 is built: a floor
+      # that no job exercises is a promise nothing keeps.
+      python_versions: '["3.9", "3.10", "3.11", "3.12", "3.13", "3.14"]'
