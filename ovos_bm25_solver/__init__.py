@@ -94,13 +94,14 @@ class BM25CorpusSolver(CorpusSolver):
             self.retriever = bm25s.BM25()
         self.corpus = corpus
         # Tokenize the corpus and only keep the ids (faster and saves memory)
+        # no progress bars: a library call must not write to the host application's stderr
         stopwords = self.default_lang.split("-")[0]
         if stopwords != "en":
             stopwords = []
 
-        corpus_tokens = bm25s.tokenize(corpus, stopwords=stopwords)
+        corpus_tokens = bm25s.tokenize(corpus, stopwords=stopwords, show_progress=False)
         # index the corpus
-        self.retriever.index(corpus_tokens)
+        self.retriever.index(corpus_tokens, show_progress=False)
         LOG.debug(f"indexed {len(corpus)} documents")
 
     def query(self, query: str, lang: Optional[str] = None, k: int = 3) -> Iterable[Tuple[str, float]]:
@@ -119,9 +120,9 @@ class BM25CorpusSolver(CorpusSolver):
         stopwords = lang.split("-")[0]
         if stopwords != "en":
             stopwords = []
-        query_tokens = bm25s.tokenize(query, stopwords=stopwords)
+        query_tokens = bm25s.tokenize(query, stopwords=stopwords, show_progress=False)
         # Get top-k results as a tuple of (doc ids, scores). Both are arrays of shape (n_queries, k)
-        results, scores = self.retriever.retrieve(query_tokens, corpus=self.corpus, k=k)
+        results, scores = self.retriever.retrieve(query_tokens, corpus=self.corpus, k=k, show_progress=False)
         for i in range(results.shape[1]):
             doc, score = results[0, i], scores[0, i]
             yield doc, score
