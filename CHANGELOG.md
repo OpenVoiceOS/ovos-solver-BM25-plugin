@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.4a1](https://github.com/OpenVoiceOS/ovos-solver-BM25-plugin/tree/0.1.4a1) (2026-10-23)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-BM25-plugin/compare/0.1.3a1...0.1.4a1)
+
+**Merged pull requests:**
+
+- fix: stop bm25s progress bars on stderr [\#37](https://github.com/OpenVoiceOS/ovos-solver-BM25-plugin/pull/37) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.1.3a1](https://github.com/OpenVoiceOS/ovos-solver-BM25-plugin/tree/0.1.3a1) (2026-09-25)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-solver-BM25-plugin/compare/0.1.2a1...0.1.3a1)
